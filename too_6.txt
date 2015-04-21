@@ -1,0 +1,35 @@
+kodutoo6 vastused
+ 1. cowsay asub kaustas /urs/bin ning see programm joonistab lehma tahetud tekstiga. 
+ 2. a)grep voi awk b)tr c)sed d)awk 
+ 3. a)awk !/OMIT/ file c)sed s/th/the/ file 
+4. väljund:
+446620838 type III restriction endonuclease StyLTI [Bacillus cereus] >gi
+488399750 type III restriction endonuclease StyLTI [Staphylococcus epidermidis]
+489744279 type III restriction endonuclease StyLTI [Lactobacillus gasseri]
+489748732 type III restriction endonuclease StyLTI [Lactobacillus gasseri] >gi
+489772697 type III restriction endonuclease StyLTI [Lactobacillus reuteri]
+489777764 type III restriction endonuclease StyLTI [Lactobacillus fermentum]
+491947273 type III restriction endonuclease StyLTI [Lactobacillus rhamnosus]
+493545951 type III restriction endonuclease StyLTI [Lactobacillus mucosae]
+494198622 type III restriction endonuclease StyLTI [Lactobacillus antri]
+497240696 type III restriction-modification system StyLTI enzyme res [Lactobacillus saerimneri]
+499987605 type III restriction endonuclease StyLTI [Lactobacillus brevis] >gi
+501359748 type III restriction endonuclease StyLTI [Lactobacillus fermentum] >gi
+503620516 type III restriction endonuclease StyLTI [Lactobacillus kefiranofaciens] >gi
+503839381 type III restriction endonuclease StyLTI [Lactobacillus ruminis] >gi
+504380636 type III restriction endonuclease StyLTI [Lactobacillus johnsonii] >gi
+504382322 type III restriction endonuclease StyLTI [Lactobacillus rhamnosus] >gi
+504386396 DNA restrictase, restriction system type III [Lactococcus lactis] >gi
+512738883 restriction endonuclease [Lactobacillus reuteri] >gi
+518082001 type III restriction endonuclease StyLTI [Lactobacillus reuteri]
+523688693 type III restriction-modification system StyLTI enzyme res [Lactobacillus gasseri]
+547468534 type III site-specific deoxyribonuclease [Lactobacillus amylovorus CAG:719]
+654312708 type III restriction-modification system StyLTI enzyme res [Lactobacillus psittaci]
+4 5. kaskude rida 
+tervet kaskude rida ei saanud tervikuna kopeerida, proovin osadena
+ 
+ grep '^>' /state/partition1/BIek/failid/type-iii_restr.fa 
+ | sed s/' >'/'\n>'/g | awk 
+ awk 'BEGIN {FS='|'}; 
+ /^>/ {print  }' | sort | grep -v 'Salmonella' 
+ loodan et on arusaadav, pohimotteliselt on see seesama kasurida, mida andsite meile loengus 

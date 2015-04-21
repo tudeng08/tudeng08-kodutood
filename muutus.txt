@@ -1,0 +1,5 @@
+ näitab_asukohta 
+total 12
+drwxr-xr-x 4 tudeng08 tudengid 4096 Mar 31 15:52 bio
+-rw-r--r-- 1 tudeng08 tudengid 1680 Apr  6 21:13 muutus.txt
+drwxr-xr-x 2 tudeng08 tudengid 4096 Apr  6 20:41 too_5
